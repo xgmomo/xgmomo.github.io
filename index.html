@@ -172,18 +172,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="用户操作系统-DNS服务器-服务器-三者之间的响应"><a href="#用户操作系统-DNS服务器-服务器-三者之间的响应" class="headerlink" title="用户操作系统,DNS服务器,服务器.三者之间的响应"></a>用户操作系统,DNS服务器,服务器.三者之间的响应</h3><p><img src="https://xgmomo.github.io/img/request-response.jpg" alt="request-response" title="请求-响应"></p>
-<h3 id="Chrome浏览器的DNS缓存"><a href="#Chrome浏览器的DNS缓存" class="headerlink" title="Chrome浏览器的DNS缓存"></a>Chrome浏览器的DNS缓存</h3><p>打开浏览器输入:chrome://net-internals/#dns 即可查看</p>
-<h3 id="解析www-qq-com域名"><a href="#解析www-qq-com域名" class="headerlink" title="解析www.qq.com域名"></a>解析<a href="http://www.qq.com域名" target="_blank" rel="noopener">www.qq.com域名</a></h3><p>DNS服务器收到请求后会判断这个域名(.com)是谁来授权管理，并会返回一个负责该顶级域名服务器的一个IP。本地DNS服务器收到IP信息后，将会联系负责.com域的这台服务器。<br>相当于先找” .com “,再找” .qq “,再找” www “</p>
-<h3 id="DNS解析顺序"><a href="#DNS解析顺序" class="headerlink" title="DNS解析顺序"></a>DNS解析顺序</h3><h4 id="1）-浏览器缓存"><a href="#1）-浏览器缓存" class="headerlink" title="1） 浏览器缓存"></a>1） 浏览器缓存</h4><p>　　当用户通过浏览器访问某域名时，浏览器首先会在自己的缓存中查找是否有该域名对应的IP地址（若曾经访问过该域名且没有清空缓存便存在）；</p>
-<h4 id="2）-系统缓存"><a href="#2）-系统缓存" class="headerlink" title="2） 系统缓存"></a>2） 系统缓存</h4><p>　　当浏览器缓存中无域名对应IP则会自动检查用户计算机系统Hosts文件DNS缓存是否有该域名对应IP；</p>
-<h4 id="3）-路由器缓存"><a href="#3）-路由器缓存" class="headerlink" title="3） 路由器缓存"></a>3） 路由器缓存</h4><p>　　当浏览器及系统缓存中均无域名对应IP则进入路由器缓存中检查，以上三步均为客服端的DNS缓存；</p>
-<h4 id="4）-ISP（互联网服务提供商）DNS缓存"><a href="#4）-ISP（互联网服务提供商）DNS缓存" class="headerlink" title="4） ISP（互联网服务提供商）DNS缓存"></a>4） ISP（互联网服务提供商）DNS缓存</h4><p>　　当在用户客服端查找不到域名对应IP地址，则将进入ISP DNS缓存中进行查询。比如你用的是电信的网络，则会进入电信的DNS缓存服务器中进行查找；</p>
-<h4 id="5）-根域名服务器"><a href="#5）-根域名服务器" class="headerlink" title="5） 根域名服务器"></a>5） 根域名服务器</h4><p>　　当以上均未完成，则进入根服务器进行查询。全球仅有13台根域名服务器，1个主根域名服务器，其余12为辅根域名服务器。根域名收到请求后会查看区域文件记录，若无则将其管辖范围内顶级域名（如.com）服务器IP告诉本地DNS服务器；</p>
-<h4 id="6）-顶级域名服务器"><a href="#6）-顶级域名服务器" class="headerlink" title="6） 顶级域名服务器"></a>6） 顶级域名服务器</h4><p>　　顶级域名服务器收到请求后查看区域文件记录，若无则将其管辖范围内主域名服务器的IP地址告诉本地DNS服务器；</p>
-<h4 id="7）-主域名服务器"><a href="#7）-主域名服务器" class="headerlink" title="7） 主域名服务器"></a>7） 主域名服务器</h4><p>　　主域名服务器接受到请求后查询自己的缓存，如果没有则进入下一级域名服务器进行查找，并重复该步骤直至找到正确纪录；</p>
-<h4 id="8）保存结果至缓存"><a href="#8）保存结果至缓存" class="headerlink" title="8）保存结果至缓存"></a>8）保存结果至缓存</h4><p>　　本地域名服务器把返回的结果保存到缓存，以备下一次使用，同时将该结果反馈给客户端，客户端通过这个IP地址与web服务器建立链接。</p>
-
+        <p>简单的总结了一些响应流程内容:  </p>
+<blockquote>
+<p>1.用户操作系统,DNS服务器,服务器.三者之间的响应<br>2.Chrome浏览器的DNS缓存<br>3.解析<a href="http://www.qq.com域名" target="_blank" rel="noopener">www.qq.com域名</a><br>4.DNS解析顺序</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2019/09/09/请求响应流程/#more">more >></a>
+        
       
 
       
@@ -618,19 +613,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">心得</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">总结</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">计划</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">目标</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">心得</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">总结</a>
               </li>
             
             <div class="clearfix"></div>
