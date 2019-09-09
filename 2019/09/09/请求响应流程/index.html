@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>请求响应流程 | xyb&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简单的总结了一些响应流程内容:    1.用户操作系统,DNS服务器,服务器.三者之间的响应2.Chrome浏览器的DNS缓存3.解析www.qq.com域名4.DNS解析顺序">
+  <meta name="description" content="简单的总结了一些响应流程内容:    1.用户操作系统,DNS服务器,服务器.三者之间的响应2.Chrome浏览器的DNS缓存3.解析” www.qq.com “域名4.DNS解析顺序">
 <meta name="keywords" content="总结">
 <meta property="og:type" content="article">
 <meta property="og:title" content="请求响应流程">
 <meta property="og:url" content="http://yoursite.com/2019/09/09/请求响应流程/index.html">
 <meta property="og:site_name" content="xyb&#39;s blog">
-<meta property="og:description" content="简单的总结了一些响应流程内容:    1.用户操作系统,DNS服务器,服务器.三者之间的响应2.Chrome浏览器的DNS缓存3.解析www.qq.com域名4.DNS解析顺序">
+<meta property="og:description" content="简单的总结了一些响应流程内容:    1.用户操作系统,DNS服务器,服务器.三者之间的响应2.Chrome浏览器的DNS缓存3.解析” www.qq.com “域名4.DNS解析顺序">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://xgmomo.github.io/img/request-response.jpg">
-<meta property="og:updated_time" content="2019-09-09T02:53:26.845Z">
+<meta property="og:updated_time" content="2019-09-09T02:56:01.781Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="请求响应流程">
-<meta name="twitter:description" content="简单的总结了一些响应流程内容:    1.用户操作系统,DNS服务器,服务器.三者之间的响应2.Chrome浏览器的DNS缓存3.解析www.qq.com域名4.DNS解析顺序">
+<meta name="twitter:description" content="简单的总结了一些响应流程内容:    1.用户操作系统,DNS服务器,服务器.三者之间的响应2.Chrome浏览器的DNS缓存3.解析” www.qq.com “域名4.DNS解析顺序">
 <meta name="twitter:image" content="https://xgmomo.github.io/img/request-response.jpg">
   
     <link rel="alternative" href="/atom.xml" title="xyb&#39;s blog" type="application/atom+xml">
@@ -179,13 +179,13 @@
       
         <p>简单的总结了一些响应流程内容:  </p>
 <blockquote>
-<p>1.用户操作系统,DNS服务器,服务器.三者之间的响应<br>2.Chrome浏览器的DNS缓存<br>3.解析<a href="http://www.qq.com域名" target="_blank" rel="noopener">www.qq.com域名</a><br>4.DNS解析顺序</p>
+<p>1.用户操作系统,DNS服务器,服务器.三者之间的响应<br>2.Chrome浏览器的DNS缓存<br>3.解析” <a href="http://www.qq.com" target="_blank" rel="noopener">www.qq.com</a> “域名<br>4.DNS解析顺序</p>
 </blockquote>
 <a id="more"></a>
 
 <h3 id="用户操作系统-DNS服务器-服务器-三者之间的关系-图解"><a href="#用户操作系统-DNS服务器-服务器-三者之间的关系-图解" class="headerlink" title="用户操作系统,DNS服务器,服务器.三者之间的关系(图解)"></a>用户操作系统,DNS服务器,服务器.三者之间的关系(图解)</h3><p><img src="https://xgmomo.github.io/img/request-response.jpg" alt="request-response" title="请求-响应"></p>
 <h3 id="Chrome浏览器的DNS缓存"><a href="#Chrome浏览器的DNS缓存" class="headerlink" title="Chrome浏览器的DNS缓存"></a>Chrome浏览器的DNS缓存</h3><p>打开浏览器输入:chrome://net-internals/#dns 即可查看</p>
-<h3 id="解析www-qq-com域名"><a href="#解析www-qq-com域名" class="headerlink" title="解析www.qq.com域名"></a>解析<a href="http://www.qq.com域名" target="_blank" rel="noopener">www.qq.com域名</a></h3><p>DNS服务器收到请求后会判断这个域名(.com)是谁来授权管理，并会返回一个负责该顶级域名服务器的一个IP。本地DNS服务器收到IP信息后，将会联系负责.com域的这台服务器。<br>相当于先找” .com “,再找” .qq “,再找” www “</p>
+<h3 id="解析”-www-qq-com-“域名"><a href="#解析”-www-qq-com-“域名" class="headerlink" title="解析” www.qq.com “域名"></a>解析” <a href="http://www.qq.com" target="_blank" rel="noopener">www.qq.com</a> “域名</h3><p>DNS服务器收到请求后会判断这个域名(.com)是谁来授权管理，并会返回一个负责该顶级域名服务器的一个IP。本地DNS服务器收到IP信息后，将会联系负责.com域的这台服务器。<br>相当于先找” .com “,再找” .qq “,再找” www “</p>
 <h3 id="DNS解析顺序"><a href="#DNS解析顺序" class="headerlink" title="DNS解析顺序"></a>DNS解析顺序</h3><h4 id="1）-浏览器缓存"><a href="#1）-浏览器缓存" class="headerlink" title="1） 浏览器缓存"></a>1） 浏览器缓存</h4><p>　　当用户通过浏览器访问某域名时，浏览器首先会在自己的缓存中查找是否有该域名对应的IP地址（若曾经访问过该域名且没有清空缓存便存在,浏览器会定期清理缓存,防止IP过期或者更换问题）；</p>
 <h4 id="2）-系统缓存"><a href="#2）-系统缓存" class="headerlink" title="2） 系统缓存"></a>2） 系统缓存</h4><p>　　当浏览器缓存中无域名对应IP则会自动检查用户计算机系统Hosts文件DNS缓存是否有该域名对应IP；</p>
 <h4 id="3）-路由器缓存"><a href="#3）-路由器缓存" class="headerlink" title="3） 路由器缓存"></a>3） 路由器缓存</h4><p>　　当浏览器及系统缓存中均无域名对应IP则进入路由器缓存中检查，以上三步均为客户端的DNS缓存；</p>
