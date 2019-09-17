@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>xyb&#39;s blog</title>
+  <title>AJAX总结 | xyb&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="xyb&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="针对AJAX，同步异步，封装，跨域，JSON和CORS知识点进行了总结">
+<meta name="keywords" content="总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AJAX总结">
+<meta property="og:url" content="http://yoursite.com/2019/09/17/AJAX总结/index.html">
 <meta property="og:site_name" content="xyb&#39;s blog">
+<meta property="og:description" content="针对AJAX，同步异步，封装，跨域，JSON和CORS知识点进行了总结">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-17T09:34:23.184Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xyb&#39;s blog">
+<meta name="twitter:title" content="AJAX总结">
+<meta name="twitter:description" content="针对AJAX，同步异步，封装，跨域，JSON和CORS知识点进行了总结">
   
     <link rel="alternative" href="/atom.xml" title="xyb&#39;s blog" type="application/atom+xml">
   
@@ -150,16 +155,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-AJAX总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-AJAX总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/17/AJAX总结/">AJAX总结</a>
+    <h1 class="article-title" itemprop="name">
+      AJAX总结
     </h1>
   
 
@@ -173,252 +176,144 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>针对AJAX，同步异步，封装，跨域，JSON和CORS知识点进行了总结</p>
-        
-          <a class="article-more-a" href="/2019/09/17/AJAX总结/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/17/AJAX总结/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-服务端开发总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/14/服务端开发总结/">服务端开发总结</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/14/服务端开发总结/" class="archive-article-date">
-  	<time datetime="2019-09-14T00:21:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="服务端开发课程告一段落，总结一些学习知识点（想到哪写到哪），加深记忆也为了以后复习时快速检索"><a href="#服务端开发课程告一段落，总结一些学习知识点（想到哪写到哪），加深记忆也为了以后复习时快速检索" class="headerlink" title="服务端开发课程告一段落，总结一些学习知识点（想到哪写到哪），加深记忆也为了以后复习时快速检索"></a>服务端开发课程告一段落，总结一些学习知识点（想到哪写到哪），加深记忆也为了以后复习时快速检索</h3><ul>
-<li>搭建Web服务器（提供网站服务的机器）</li>
-<li>HTTP（浏览器与服务端的通讯协议）</li>
-<li>服务端开发（动态网页技术）</li>
-<li>数据库操作（服务端存储数据的方式）</li>
-<li>HTTP会话（解决HTTP无状态的特点）</li>
+<a id="more"></a>
+<ul>
+<li>AJAX</li>
+<li>xhr.readyState()的值</li>
+<li>请求体与请求体关系</li>
+<li>同步与异步</li>
+<li>模板</li>
+<li>基本的封装</li>
+<li>load</li>
+<li>跨域</li>
+<li>JSONP</li>
+<li>CORS</li>
 <li>总结</li>
 </ul>
-        
-          <a class="article-more-a" href="/2019/09/14/服务端开发总结/#more">more >></a>
-        
-      
+<h4 id="AJAX是什么"><a href="#AJAX是什么" class="headerlink" title="AJAX是什么"></a>AJAX是什么</h4><p>AJAX 是一套 API 核心提供的类型 ：XMLHttpRequest<br>AJAX就是浏览器提供的一套API，可以通过JavaScript调用，从而实现代码的控制请求与响应，实现网络编程（指用代码方式操作它）</p>
+<ul>
+<li><strong>以下代码，手工敲出来一遍：</strong><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest</span><br><span class="line">xhr.open(<span class="string">'GET'</span> ,<span class="string">'time.php'</span>)</span><br><span class="line">xhr.send()</span><br><span class="line">xhr.addElementListener(<span class="string">'readystatechange'</span> , <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">this</span>.readyState !== <span class="number">4</span>) <span class="keyword">return</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.readState)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/14/服务端开发总结/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-请求响应流程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/09/请求响应流程/">请求响应流程</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/09/请求响应流程/" class="archive-article-date">
-  	<time datetime="2019-09-09T02:22:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>简单的总结了一些响应流程内容:  </p>
-<blockquote>
-<p>1.用户操作系统,DNS服务器,服务器.三者之间的响应<br>2.Chrome浏览器的DNS缓存<br>3.解析 <a href="http://www.qq.com" target="_blank" rel="noopener">www.qq.com</a> 域名<br>4.DNS解析顺序</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/2019/09/09/请求响应流程/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/09/请求响应流程/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-开学一周" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/06/开学一周/">开学一周</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/06/开学一周/" class="archive-article-date">
-  	<time datetime="2019-09-06T03:33:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="方向"><a href="#方向" class="headerlink" title="方向"></a>方向</h2><ul>
-<li>php</li>
-<li>Ajax</li>
-<li>html5和css3</li>
-<li>移动web</li>
-<li>nodejs</li>
-<li>Vuejs</li>
+</li>
 </ul>
-<p>十月中旬完成目标,出发实践</p>
+<h4 id="xhr-readyState-的值："><a href="#xhr-readyState-的值：" class="headerlink" title="xhr.readyState()的值："></a>xhr.readyState()的值：</h4><ul>
+<li><p><strong>（1）</strong></p>
+<ul>
+<li>0：初始化，请求代理对象。（在 <code>var xhr = new XMLHttpRequest</code> 后）  </li>
+<li>1：open方法已经被调用，建立一个与服务端特定的端口连接。（在 <code>xhr.open(&#39;GET&#39; ,&#39;time.php&#39;)</code> 后）  </li>
+<li>2：已经接收到了响应报文的响应头，此时可以打印出响应头，无法打印出响应体。（在 <code>readystatechange</code> 中）  </li>
+<li>3：正在下载响应报文的响应，此时打印出的响应体可能为空，也可能不完整，在这里处理响应体不保险。（在 <code>readystatechange</code> 中）  </li>
+<li>4：一切ok，整个响应报文已经下载下来了。（在 <code>readystatechange</code> 中）</li>
+</ul>
+</li>
+<li><p><strong>（2）</strong>  </p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>readyState()</th>
+<th align="center">状态描述</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td align="center">UNSENT</td>
+<td align="right">代理(XHR)被创建，但尚未调用open()方法</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="center">OPENED</td>
+<td align="right">open()方法已经被调用，建立了连接</td>
+</tr>
+<tr>
+<td>2</td>
+<td align="center">HEADERS_RECEIVED</td>
+<td align="right">send()方法已经被调用，并且已经可以获取状态状态行和响应头</td>
+</tr>
+<tr>
+<td>3</td>
+<td align="center">LOADING</td>
+<td align="right">响应体下载中，responseText属性中可能已经包含部分数据</td>
+</tr>
+<tr>
+<td>4</td>
+<td align="center">DONE</td>
+<td align="right">响应体下载完成，可以直接使用responseText</td>
+</tr>
+</tbody></table>
+<h4 id="请求头中的格式应该跟着请求体格式的变化而变化"><a href="#请求头中的格式应该跟着请求体格式的变化而变化" class="headerlink" title="请求头中的格式应该跟着请求体格式的变化而变化"></a>请求头中的格式应该跟着请求体格式的变化而变化</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// !!! 一定注意 如果请求体是 urlencoded 格式 必须设置这个请求头 ！！！</span></span><br><span class="line">xhr.setRequestHeader(<span class="string">'Content-Type'</span>, <span class="string">'application/x-www-form-urlencoded'</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="同步与异步"><a href="#同步与异步" class="headerlink" title="同步与异步"></a>同步与异步</h4><p>比作生活中的场景：<br>同步：一个人同一时刻只能做一件事情，在执行一些耗时的操作（不需要人看管）不去做别的事情，<strong>只是等待</strong>。<br>异步：在执行一些耗时的操作（不需要人看管）去做别的事情，<strong>而不是等待</strong>。<br>同步的模式下AJAX会有愣住的情况，区别在于send()方法会不会出现等待情况</p>
+<h4 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h4><ul>
+<li><p>为什么用script</p>
+<ol>
+<li>innerHTML 永远不会显示在界面上</li>
+<li>如果 type 不等于 text/javascript 的话，内部的内容不会作为 JavaScript 执行</li>
+</ol>
+</li>
+<li><p>步骤</p>
+<ol>
+<li>选择一个模板引擎<br><a href="https://github.com/tj/consolidate.js#supported-template-engines" target="_blank" rel="noopener">https://github.com/tj/consolidate.js#supported-template-engines</a></li>
+<li>下载模板引擎JS文件</li>
+<li>引入到页面中</li>
+<li>准备一个模板</li>
+<li>准备一个数据</li>
+<li>通过模板引擎的JS提供的一个函数将模板和数据整合得到渲染结果HTML</li>
+<li>将渲染结果的HTML 设置到 默认元素的 innerHTML 中</li>
+</ol>
+</li>
+<li><p>代码</p>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">table</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"tmpl"</span> <span class="attr">type</span>=<span class="string">"text/x-art-template"</span>&gt;</span></span><br><span class="line">    &#123;&#123;each comments&#125;&#125;</span><br><span class="line"><span class="xml">    <span class="comment">&lt;!-- each 内部 $value 拿到的是当前被遍历的那个元素 --&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123;$value.author&#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123;$value.content&#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123;$value.created&#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></span><br><span class="line">    &#123;&#123;/each&#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"template-web.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest()</span></span><br><span class="line"><span class="javascript">    xhr.open(<span class="string">'GET'</span>, <span class="string">'test.php'</span>)</span></span><br><span class="line">    xhr.send()</span><br><span class="line"><span class="javascript">    xhr.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">if</span> (<span class="keyword">this</span>.readyState !== <span class="number">4</span>) <span class="keyword">return</span></span></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> res = <span class="built_in">JSON</span>.parse(<span class="keyword">this</span>.responseText)</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 模板所需数据</span></span></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> context = &#123; <span class="attr">comments</span>: res.data &#125;</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 借助模板引擎的API 渲染数据</span></span></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> html = template(<span class="string">'tmpl'</span>, context)</span></span><br><span class="line"><span class="javascript">      <span class="built_in">console</span>.log(html)</span></span><br><span class="line"><span class="javascript">      <span class="built_in">document</span>.getElementById(<span class="string">'demo'</span>).innerHTML = html</span></span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>详细代码参考：学习文件/AJAX/02-day/03</p>
+<h4 id="基本的封装"><a href="#基本的封装" class="headerlink" title="基本的封装"></a>基本的封装</h4><ul>
+<li>封装的套路<ol>
+<li>写一个相对比较完善的用例</li>
+<li>写一个空函数，没有形参，将刚刚的用例直接作为函数的函数体</li>
+<li>根据使用过程中的需求抽象参数</li>
+</ol>
+</li>
+</ul>
+<p><strong>注意</strong>：不应该在封装的函数中主观的处理响应结果</p>
+<h4 id="load"><a href="#load" class="headerlink" title="load"></a>load</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span> (<span class="params">$</span>) </span>&#123;        <span class="comment">//括号中加$，将全局变成局部</span></span><br><span class="line">    $(<span class="string">'.list-group-item'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> url = $(<span class="keyword">this</span>).attr(<span class="string">'href'</span>)  <span class="comment">//获取url</span></span><br><span class="line">        $(<span class="string">'#main'</span>).load(url + <span class="string">' #main &gt; *'</span>) <span class="comment">//更新对应id中对应内容</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>    <span class="comment">//阻止跳转</span></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="跨域"><a href="#跨域" class="headerlink" title="跨域"></a>跨域</h4><ul>
+<li>相关概念  </li>
+</ul>
+<p><strong>同源策略</strong>是浏览器的一种安全策略，所谓同源是指域名，协议，端口完全相同，只有同源的地址才可以互相通过AJAX的方式请求。<br><strong>同源策略指的是</strong>不同源地址之间，“默认”不能相互发送AJAX请求，<br>不同源之间如果需要相互请求，必须服务端和客户端配合才能完成</p>
+<ul>
+<li>跨域需要服务端与客户端的配合才行<br>服务端需要调用对应的函数</li>
+<li>代码<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> script = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>)</span><br><span class="line">    script.src = <span class="string">'http://localhost/time2.php'</span></span><br><span class="line">    <span class="built_in">document</span>.body.appendChild(script) <span class="comment">// 开始发起请求</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 相当于请求的回调</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">foo</span> (<span class="params">res</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(res)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">header(<span class="string">'Content-Type: application/javascript'</span>);</span><br><span class="line"></span><br><span class="line">$json = json_encode(<span class="keyword">array</span>(</span><br><span class="line">  <span class="string">'time'</span> =&gt; time()</span><br><span class="line">));</span><br><span class="line"><span class="comment">// 在 JSON 格式的字符串外面包裹了一个函数的调用，</span></span><br><span class="line"><span class="comment">// 返回的结果就变成了一段 JS 代码</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">"foo(&#123;$json&#125;)"</span>;</span><br></pre></td></tr></table></figure>
+
+<h4 id="JSONP"><a href="#JSONP" class="headerlink" title="JSONP"></a>JSONP</h4><p>JSON with Padding ，是一种借助于script标签发送跨域请求的技巧<br>（JSONP和AJAX并没有联系）</p>
+<ul>
+<li><p>代码报错，无法找到data（先输出后定义）</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(data)</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> data = &#123;</span></span><br><span class="line"><span class="javascript">        time : <span class="built_in">Date</span>.now()</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>先定义<code>myonload</code>函数，在后面定义了<code>data</code>数据后，再调用函数</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">myonload</span>(<span class="params">data</span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(data)</span></span><br><span class="line">    &#125; </span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> data = &#123;</span></span><br><span class="line"><span class="javascript">        time : <span class="built_in">Date</span>.now()</span></span><br><span class="line">    &#125;</span><br><span class="line">    myonload(data)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>详细代码参考：学习文件/AJAX/02-day/jsonp</p>
+<ul>
+<li>理解<br>通过script标签请求一个服务端的PHP文件<br>这个文件返回的结果是一段JS，作用是调用我们事先定义好的一个函数<br>从而将服务端想要给客户端发过去的数据发送给客户端  </li>
+</ul>
+<p>因为XMLHttpRequest不支持不同源地址之间的请求，所以我们找到script标记，借助于script标记可以发送不同源地址请求的特性去完成的跨域请求</p>
+<h4 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h4><p>Cross Origin Resource Share(跨域资源共享)</p>
+<p>服务端加</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">// 一行代码搞定</span></span><br><span class="line"><span class="comment">// 允许跨域请求</span></span><br><span class="line">header(<span class="string">'Access-Control-Allow-Origin: *'</span>);</span><br></pre></td></tr></table></figure>
+
+<p>想指定哪个域就把<em>改成对应地址，</em>表示都可以请求</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>能力不够API来凑<br>存在即合理<br>一段代码大家都在用，而且用着很麻烦的啥时候，那么肯定有API</p>
 
       
 
@@ -431,91 +326,6 @@
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">计划</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">目标</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/06/开学一周/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-19暑期工作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/18/19暑期工作/">19暑期前端工作</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/18/19暑期工作/" class="archive-article-date">
-  	<time datetime="2019-08-18T07:44:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>每周<a href="https://note.youdao.com/web/#/file/AD602D678C814D8D8EE407F485BF0DED/markdown/DD8E8F7708D04CCDAF22C319CBB60BAC/" target="_blank" rel="noopener">周结</a>以及批改</p>
-<h4 id="周结1"><a href="#周结1" class="headerlink" title="周结1"></a>周结1</h4><p>1）把基础知识打扎实是很重要的，但是学习是一个持续性的事情，肯定不是看完这一遍视频就可以搞定的，所以也不用焦虑。</p>
-        
-          <a class="article-more-a" href="/2019/08/18/19暑期工作/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">心得</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
         		</li>
@@ -526,16 +336,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/18/19暑期工作/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/17/AJAX总结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/14/服务端开发总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">服务端开发总结</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -555,136 +424,14 @@
 
 
 
-
   
-    <article id="post-my-first-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/18/my-first-blog/">my-first-blog</a>
-    </h1>
   
 
-        
-        <a href="/2019/08/18/my-first-blog/" class="archive-article-date">
-  	<time datetime="2019-08-18T03:43:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>第一个博客:test</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/18/my-first-blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/18/hello-world/">Hello World</a>
-    </h1>
   
 
-        
-        <a href="/2019/08/18/hello-world/" class="archive-article-date">
-  	<time datetime="2019-08-18T02:41:18.493Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-        
-          <a class="article-more-a" href="/2019/08/18/hello-world/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/18/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+
   
 
 
@@ -707,8 +454,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
